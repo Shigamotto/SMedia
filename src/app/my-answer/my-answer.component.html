@@ -1,0 +1,17 @@
+<form [formGroup]="myAnswerForm" (ngSubmit)="onSubmit()" id="myAnsForm">
+    <label class="form-label">Me
+        <input type="text" formControlName="email" class="form-control-text">
+    </label>
+    <label class="form-label">
+        With me
+        <input type="number" formControlName="visitors" class="form-control-number">
+    </label>
+    <select name="answer" formControlName="answer" class="form-select" >
+        <option value="null" disabled >Нужно выбрать</option>
+        <option value="true">Я точно приду</option>
+        <option value="false">Я точно не приду</option>
+    </select>
+    <span *ngIf="!myAnswerForm.valid && myAnswerForm.touched &&
+    myAnswerForm.get('answer').errors['isNotNull']" class="error">Это поле обязательное</span>
+    <button type="submit" class="but-sub">Send</button>
+</form>

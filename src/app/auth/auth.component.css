@@ -1,0 +1,8 @@
+.logining {position:fixed; top:calc(50% - 60px); left: 0; right:0; width:100%; margin:0; text-align:center;}
+.login-wth-gp, .login-wth-fb {
+ display:inline-block; width:80px; height:80px; border:0; cursor:pointer;
+  background: url(../../assets/f_logo.svg) center no-repeat; background-size: contain;
+}
+.login-wth-gp {
+  background-image: url(../../assets/google-plus.svg);
+}

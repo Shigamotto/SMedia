@@ -1,0 +1,14 @@
+<input type="text" name="search" [(ngModel)]="SearchItem" >
+<div *ngFor="let answer of answersService.getAnswers()" class="answers">
+    <li data-id="{{ answer.id }}" class="sin-ans"
+        *ngIf="SearchItem == '' || answer.name.indexOf(SearchItem.toLowerCase()) !== -1"
+        [ngClass]="{'self-bound': answer.name == user.email }"
+    >
+        <img [src]="answer.imgPath" class="ans">
+        <div class="name">{{ answer.name }}</div>
+        <div class="ans">{{ answer.answer }}</div>
+        <div class="vis">
+            <span *ngIf="answer.visitors > 0">{{ answer.visitors }}</span>
+        </div>
+    </li>
+</div>

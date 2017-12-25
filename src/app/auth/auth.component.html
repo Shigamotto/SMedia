@@ -1,0 +1,12 @@
+<div *ngIf="mediaAuthService.isAuthenticated()">
+    <img src="{{ user.photoUrl }}">
+    <h4>{{ user.name }}</h4>
+    <p>{{ user.email }}</p>
+    <button (click)="signOut()">SignOut</button>
+</div>
+
+<div *ngIf="!mediaAuthService.isAuthenticated()" class="logining">
+    <p>Authenticated with:</p>
+    <button (click)="signInWithFB()" class="login-wth-fb"></button>
+    <button (click)="signInWithGoogle()" class="login-wth-gp"></button>
+</div>

@@ -1,0 +1,9 @@
+.answers {display:table; width:100%;}
+.sin-ans {display:table-row; list-style: none; width:100%;}
+.sin-ans div {display:table-cell; min-width:5%; vertical-align: middle;}
+.sin-ans div.name {width:60%;}
+.sin-ans div.ans {width:10%;}
+.sin-ans div.vis {width:10%;}
+.sin-ans img.ans { display:table-cell; min-width:80px; width:20%;}
+
+.self-bound {background:red; color:white; font-weight: bold;}

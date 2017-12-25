@@ -1,0 +1,7 @@
+body {padding:0; margin:0; position:relative; box-sizing: content-box;
+  font-size:12px; font-family: Calibri, sans-serif, "Open Sans"; }
+.page {width:80%; max-width:640px; margin:20px auto; position:relative;}
+.nav {display:block; position:relative;}
+.nav:after {content:''; display:block; width:100%; clear:both; float:none;}
+.nav-links {padding:8px 12px; border-radius: 6px; background: #ff2244;
+  cursor:pointer; text-decoration: none; color:white; display:inline-block; margin-right: 8px;}
